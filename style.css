@@ -1,0 +1,68 @@
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(#222, black);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #888;
+    width: min-content;
+    padding: 2%;
+    margin: auto;
+}
+
+#input {
+    background-color: #222;
+    margin: 5%;
+    color: white;
+}
+
+#main {
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.choice {
+    transition: 0.5s;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding-left: 1%;
+    padding-right: 1%;
+    height: 75%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.choice:hover {
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+#output {
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+    height: 100%;
+    overflow-y: auto;
+    display: none;
+    margin-top: 10%;
+}
